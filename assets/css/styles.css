@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb((245), 247, 251);
+    color: rgb(93,102,144);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .............................. NAVIGATION SECTION ........................... */
+#home{
+    height: 100vh;
+}
+
+nav > .navMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav > .navMenu > .logo{
+    flex: 1;
+    color: #00204a;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav > .navMenu > .pageTitle{
+    flex: 2;
+    display: flex;
+    justify-content: center ;
+    font-family: 'Adamina', serif;
+    color:#97acf0
+}
+
+nav > .navMenu > .navButton{
+    flex: 1;
+    display: flex;
+    justify-content:flex-end;
+}
+nav > .navMenu > .navButton > button{
+    padding: 0.7rem;
+    border: none;
+    cursor: pointer;
+    background-color: #4c5a9e;
+    border-top-right-radius: 0.7rem;
+}
+/* .............................. FORM SECTION ........................................... */
+
+.box{
+    max-width: 25rem;
+    margin: 3.125rem auto;
+    
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+#heading{
+    text-align: center;
+}
+#heading > h3{
+    font-family: 'Adamina', serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#heading > p{
+    font-size: 0.75rem;
+    font-weight: 600;   
+}
+.item {
+    position: relative;
+    height: 50vh;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #f1f1f1;
+  }
+.item > p{
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+}
+.item > .inputContainer{
+    margin: 0.75rem;
+    background: #e5e8ee;
+}
+label{
+  margin: 0;
+  padding: 1rem;
+ 
+  color: #00204a;
+ font-weight: 500;
+}
+input:checked + label {
+    background-color: #95d6a2;
+}
+input[type="checkbox"] {
+    margin: 20px;
+}
+.item > button{
+       position: absolute;
+       right: 0.5rem;
+       bottom: 0.5rem;
+        width: 40%;
+        padding: 0.725rem;
+        border-radius: 0.7rem;
+        border: none;
+        background-color: #4c5a9e;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        
+      
+}
