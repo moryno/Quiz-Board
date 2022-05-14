@@ -13,6 +13,7 @@ body {
 /* .............................. NAVIGATION SECTION ........................... */
 #home {
     height: 100vh;
+    padding: 0 2rem;
 }
 
 nav > .navMenu {
@@ -25,7 +26,10 @@ nav > .navMenu {
 nav > .navMenu > .logo {
     flex: 1;
     color: #00204a;
+    display: flex;
+    justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
 }
 
 nav > .navMenu > .pageTitle {
@@ -33,7 +37,8 @@ nav > .navMenu > .pageTitle {
     display: flex;
     justify-content: center ;
     font-family: 'Adamina', serif;
-    color:#97acf0
+    color:#7291f6;
+    font-weight: 600;
 }
 
 nav > .navMenu > .navButton {
@@ -47,6 +52,8 @@ nav > .navMenu > .navButton > button {
     cursor: pointer;
     background-color: #4c5a9e;
     border-top-right-radius: 0.7rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 /* .............................. HEADING SECTION ........................................... */
 
@@ -65,12 +72,12 @@ nav > .navMenu > .navButton > button {
 #heading > h3 {
     font-family: 'Adamina', serif;
     font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 #heading > p {
-    
-    font-size: 0.75rem;
-    font-weight: 600;   
+    font-size: 1rem;
+    font-weight: 500;   
 }
 #heading > button {
     padding: 0.7rem;
@@ -132,9 +139,9 @@ li {
     font-weight: 500;
 }
 
-input:checked {
+/* input:checked + label {
     background-color: #95d6a2;
-}
+} */
 input[type="checkbox"] {
     margin: 20px;
 }

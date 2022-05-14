@@ -28,6 +28,7 @@ const checkedBox = (checkbox) =>{
     let checkboxes = document.querySelectorAll(".selected");
     checkboxes.forEach((box) => {
         if(box !== checkbox) box.checked = false;
+        
     })
 }
 
