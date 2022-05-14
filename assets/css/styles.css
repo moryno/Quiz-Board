@@ -70,6 +70,18 @@ nav > .navMenu > .navButton > button {
     font-size: 0.75rem;
     font-weight: 600;   
 }
+#heading > button {
+    padding: 0.7rem;
+    font-weight: 600;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: #4c5a9e;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
 form{
     display: flex;
     overflow-x: hidden;

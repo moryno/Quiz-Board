@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Actor&family=Adamina&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <section id="home">
@@ -26,7 +26,27 @@
       </nav>
       <div id="heading">
         <h3>Please check the answer you think is right</h3>
-        <button type="submit">START</button>
+        <p>SELECT ONLY ONE OPTION</p>
+      </div>
+      <div class="box">
+        <form action="/" method="post">
+          <div class="item">
+            <p>What is the shortform of HTML</p>
+            <div class="inputContainer">
+              <input type="checkbox" name="quiz1" id="quiz1" />
+              <label class="selected" for="quiz1">HTML</label>
+            </div>
+            <div class="inputContainer">
+              <input type="checkbox" name="quiz2" id="quiz2" />
+              <label class="selected" for="quiz2">HMTL</label>
+            </div>
+            <div class="inputContainer">
+              <input type="checkbox" name="quiz3" id="quiz3" />
+              <label class="selected" for="quiz3">XML</label>
+            </div>
+            <button class="submit" type="submit">Next Quiz</button>
+          </div>
+        </form>
       </div>
     </section>
     <script src="./assets/js/quiz.js"></script>
