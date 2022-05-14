@@ -20,7 +20,9 @@
           </div>
           <div class="pageTitle">Javascript Survey Quiz</div>
           <div class="navButton">
-            <button type="submit">Save Progress</button>
+            <button type="submit">
+              <a href="../../index.html">Back to Home</a>
+            </button>
           </div>
         </div>
       </nav>
@@ -32,7 +34,7 @@
         <div class="wrapper">
           <div id="form">
             <div class="item currentSlide">
-              <p>What is the shortform of HTML</p>
+              <p>How to write an IF statement in JavaScript?</p>
               <div class="inputContainer">
                 <ul>
                   <li>
@@ -40,31 +42,43 @@
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="html"
-                    />HTML
+                      value="correct"
+                      onclick="checkedBox(this)"
+                    />if(i == 5)
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="xml"
-                    />XML
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />if i = 5
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="hmtl"
-                    />HMTL
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />if i == 5 then
+                  </li>
+                  <li>
+                    <input
+                      class="selected"
+                      type="checkbox"
+                      name="quiz1"
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />if i = 5 then
                   </li>
                 </ul>
               </div>
               <button class="nextQuiz">Next Quiz</button>
             </div>
             <div class="item">
-              <p>What is JS</p>
+              <p>Where is the correct place to insert a JavaScript?</p>
               <div class="inputContainer">
                 <ul>
                   <li>
@@ -72,57 +86,28 @@
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="html"
-                    />HTML
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />
+                    The head section
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="xml"
-                    />XML
+                      value="correct"
+                      onclick="checkedBox(this)"
+                    />The body section
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="hmtl"
-                    />HMTL
-                  </li>
-                </ul>
-              </div>
-              <button class="prevQuiz">Prev Quiz</button>
-              <button class="nextQuiz">Next Quiz</button>
-            </div>
-            <div class="item">
-              <p>What HTML</p>
-              <div class="inputContainer">
-                <ul>
-                  <li>
-                    <input
-                      class="selected"
-                      type="checkbox"
-                      name="quiz1"
-                      value="html"
-                    />HTML
-                  </li>
-                  <li>
-                    <input
-                      class="selected"
-                      type="checkbox"
-                      name="quiz1"
-                      value="xml"
-                    />XML
-                  </li>
-                  <li>
-                    <input
-                      class="selected"
-                      type="checkbox"
-                      name="quiz1"
-                      value="hmtl"
-                    />HMTL
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />Both the head section and body section
                   </li>
                 </ul>
               </div>
@@ -130,7 +115,7 @@
               <button class="nextQuiz">Next Quiz</button>
             </div>
             <div class="item">
-              <p>shortform</p>
+              <p>The external JavaScript file must contain the script tag.</p>
               <div class="inputContainer">
                 <ul>
                   <li>
@@ -138,24 +123,19 @@
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="html"
-                    />HTML
+                      value="correct"
+                      onclick="checkedBox(this)"
+                    />True
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="xml"
-                    />XML
-                  </li>
-                  <li>
-                    <input
-                      class="selected"
-                      type="checkbox"
-                      name="quiz1"
-                      value="hmtl"
-                    />HMTL
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />
+                    False
                   </li>
                 </ul>
               </div>
@@ -163,7 +143,7 @@
               <button class="nextQuiz">Next Quiz</button>
             </div>
             <div class="item">
-              <p>Wooo</p>
+              <p>How do you create a function in JavaScript?</p>
               <div class="inputContainer">
                 <ul>
                   <li>
@@ -171,24 +151,63 @@
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="html"
-                    />HTML
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />function:myFunction()
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="xml"
-                    />XML
+                      value="correct"
+                      onclick="checkedBox(this)"
+                    />function = myFunction()
                   </li>
                   <li>
                     <input
                       class="selected"
                       type="checkbox"
                       name="quiz1"
-                      value="hmtl"
-                    />HMTL
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />function myFunction
+                  </li>
+                </ul>
+              </div>
+              <button class="prevQuiz">Prev Quiz</button>
+              <button class="nextQuiz">Next Quiz</button>
+            </div>
+            <div class="item">
+              <p>How do you call a function named "myFunction"?</p>
+              <div class="inputContainer">
+                <ul>
+                  <li>
+                    <input
+                      class="selected"
+                      type="checkbox"
+                      name="quiz1"
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />call myFunction
+                  </li>
+                  <li>
+                    <input
+                      class="selected"
+                      type="checkbox"
+                      name="quiz1"
+                      value="correct"
+                      onclick="checkedBox(this)"
+                    />myfunction()
+                  </li>
+                  <li>
+                    <input
+                      class="selected"
+                      type="checkbox"
+                      name="quiz1"
+                      value="wrong"
+                      onclick="checkedBox(this)"
+                    />call function myFunction
                   </li>
                 </ul>
               </div>
@@ -202,16 +221,3 @@
     <script src="../js/quiz.js"></script>
   </body>
 </html>
-
-<!-- <div class="inputContainer">
-  <input type="checkbox" name="quiz1" id="quiz1" />
-  <label class="selected" for="quiz1">HTML</label>
-</div>
-<div class="inputContainer">
-  <input type="checkbox" name="quiz2" id="quiz2" />
-  <label class="selected" for="quiz2">HMTL</label>
-</div>
-<div class="inputContainer">
-  <input type="checkbox" name="quiz3" id="quiz3" />
-  <label class="selected" for="quiz3">XML</label>
-</div> -->

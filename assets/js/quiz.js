@@ -7,21 +7,29 @@ let inputs = document.querySelectorAll(".selected");
 inputs.forEach((input) => { 
    input.addEventListener("click", function(){
     let checked = this.checked;
+    
     if(checked){
     let selectedAnswer = this.value;
-    if(selectedAnswer === "html"){
-       points.push(10);
-   }
-   else{
-       points.push(23)
-   }
-}
-else{
+    if(selectedAnswer === "correct"){
+       points.push(20);
+     }
+    else{
+       points.push(0)
+    }
+    }
+    else{
    console.log( "No answer has been selected");
-}
-   })
-})
+    }
+    })
+});
 
+// CREATE A FUNCTION TO ALLOW ONLY ONE CHECKBOX TO BE SELECTED
+const checkedBox = (checkbox) =>{
+    let checkboxes = document.querySelectorAll(".selected");
+    checkboxes.forEach((box) => {
+        if(box !== checkbox) box.checked = false;
+    })
+}
 
 // CREATE A FUNCTION TO COMPUTE AND DISPLAY SCORE WHEN SUBMITTED
 
