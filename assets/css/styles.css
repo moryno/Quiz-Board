@@ -48,17 +48,15 @@ nav > .navMenu > .navButton > button {
     background-color: #4c5a9e;
     border-top-right-radius: 0.7rem;
 }
-/* .............................. FORM SECTION ........................................... */
+/* .............................. HEADING SECTION ........................................... */
 
-.box, #heading {
+#heading, .box {
     max-width: 25rem;
     margin: 3.125rem auto;
     border-radius: 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
     position: relative;
     
-    
-  
 }
 #heading {
     text-align: center;
@@ -87,11 +85,18 @@ nav > .navMenu > .navButton > button {
     text-decoration: inherit;
     color: inherit;
 }
+/* ................................ FORM SECTION ................................................ */
+.box{
+    height: 60%;
+  
+}
 
-#form {
-    
+.wrapper {
     position: relative;
     height: 100%;
+    overflow: hidden;
+   
+    
     
 }
 
@@ -105,6 +110,8 @@ nav > .navMenu > .navButton > button {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #f1f1f1;
+    transition: transform 250ms ease-in;
+   
   }
 .item > p {
       text-align: center;

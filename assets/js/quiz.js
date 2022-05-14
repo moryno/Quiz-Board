@@ -50,11 +50,28 @@ const onNext = () => {
 
 const track = document.querySelector("#form");
 const slides = Array.from(track.children);
-const nextButton = document.querySelector(".nextQuiz");
+
+// const nextButton = document.querySelector(".nextQuiz");
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 // 1. Arrange slide next to one another
 const setSlidePosition = (slide, i) => {
     slide.style.left = slideWidth * i + "px";
 }
-slides.forEach(setSlidePosition)
+slides.forEach(setSlidePosition);
+
+// 2. Move to the next quiz on the right
+const buttons = document.querySelectorAll(".nextQuiz");
+buttons.forEach((button) => {
+    button.addEventListener("click", function(){
+        const currentSlider = track.querySelector(".currentSlide");
+        const nextSlider = currentSlider.nextElementSibling;
+        const positionChangeBy = nextSlider.style.left;
+        // next slide 
+        track.style.transform = `translateX(-${positionChangeBy})`;
+        currentSlider.classList.remove("currentSlide");
+        nextSlider.classList.add("currentSlide");
+        
+    
+    })
+})
