@@ -45,3 +45,16 @@ const onNext = () => {
 
     }
 }
+
+// ADD A CAROUSEL FOR THE QUIZES
+
+const track = document.querySelector("#form");
+const slides = Array.from(track.children);
+const nextButton = document.querySelector(".nextQuiz");
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+// 1. Arrange slide next to one another
+const setSlidePosition = (slide, i) => {
+    slide.style.left = slideWidth * i + "px";
+}
+slides.forEach(setSlidePosition)

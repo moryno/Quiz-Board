@@ -55,6 +55,8 @@ nav > .navMenu > .navButton > button {
     margin: 3.125rem auto;
     border-radius: 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
     
   
 }
@@ -86,16 +88,20 @@ nav > .navMenu > .navButton > button {
     color: inherit;
 }
 
-form{
-    display: flex;
-    overflow-x: hidden;
-}
-.item {
+#form {
+    
     position: relative;
-    height: 50vh;
+    height: 100%;
+    
+}
+
+.item {
+    position: absolute;
+    top:0;
+    bottom: 0;
     width: 100%;
+    height: 50vh;
     padding: 0.7rem;
-    /* transform: translateX(50%); */
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #f1f1f1;
@@ -106,7 +112,8 @@ form{
       font-weight: 500;
 }
 ul {
-    
+    padding: 0;
+    margin: 0;
     color: #00204a;
 }
 li {
@@ -124,7 +131,7 @@ input[type="checkbox"] {
 }
 .item > button{
        position: absolute;
-       right: 0.5rem;
+       right: 2rem;
        bottom: 0.5rem;
         width: 40%;
         padding: 0.725rem;
