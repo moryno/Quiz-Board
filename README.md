@@ -2,7 +2,17 @@
 
 ## By Maurice Nganga
 
-![Quiz Board Website](./assets/img/quick%20movers%20landing%20page.png)
+### Quiz board landing page
+
+![Quiz Board Website](./assets/img/quiz%20landing.png)
+
+### Quiz Board Form
+
+![Quiz Board Website](./assets/img/quiz%20board.png)
+
+### Quiz Board Score
+
+![Quiz Board Website](./assets/img/quiz%20score.png)
 
 ## A Quiz Board Website
 
@@ -19,36 +29,43 @@
 ## Description
 
 ---
-For two weeks we have tackled on how to use HTML and css to create beautiful pages. Using the knowledge gathered and skills aquired I made a Quick Movers landing page.  
-The Website will consit of two pages the main page, which is the landing page and property page. The property page is linked in the property link in the top navigation bar.  
-Some of the feautres employed are like linear gradient, use of descendant classes, use of font awesome technology, adding background image in css stylesheet and more.
+On the third week in Web Development course we cover intoduction to Javascript. Javascript allows interaction with the page. While HTML is for structuring webpages and CSS is for styling the page.  
+With the help of the three, _**HTML, CSS**_ and _**Javascript**_ , I made a quiz board for after-school computer class to take, to test their understanding of _**Javascript**_. It is a multiple choice questions website where they get to pick the answer they think is correct. And after submitting their selected answers they get their scores back.  
+With the help of _**Javascript**_ I was able to create functions that can be performed by some of the features of the website. _For example_, when an input box is checked it triggers a function that check the selected answer then compaires the selected answer with the correct answer then stores the points in an array that will be computed when submit button is clicked.  
+With the _**Javascript**_ I was able to create a quiz carousel, then the student is done select their answer they can click on the _nextQuiz_ button which allows the next slider with the next question to show up. They have the ability to go back to the previous question if they want to change their answers.
+Then on the last question the _submit_ button allows them to post their answer and this triggers a fuction that goes through the points array then sum all the points the students got then displays the score to them.
+
 
 ## Features
 
 ---
-Customers visiting this page would be able to see:  
+The computer club students visiting this page would be able to see:  
 
-1. Quick Movers porfolio
+1. Quiz board landing page with a start button
 
-2. Listing of modern houses
+2. Multi-choice questions
 
-3. Properties interior decors
+3. An input they can select thei answer
 
-4. Prices of modern houses
+4. Sliders containing different questions
 
-5. There is a contact section to get in touch with quick movers staff
+5. A submit button to submit their answer when they are done
+
+6. Their score at the header section
 
 ### Technology Used
 
 ---
 
-- Used Visual Studio Code editor to write the HTML and CSS used to create the page 
+- Used Visual Studio Code editor to write the _**HTML**_, _**CSS**_ and _**Javascript**_ used to create the quiz board website.
 
-- HTML - HTML was used to create the structure and foundation of the landing page.  
+- **HTML** - HTML was used to create the structure and foundation of the landing page.  
 
-- CSS - used css to style the website to look appealing to the user.
+- **CSS** - used css to style the website to look appealing to the user.
 
-- Employed the help of [www.fontawesome.com](https://fontawesome.com/v5/icons) to use and embed icons and social icons in the website. Examples of social icons used were Facebook, Twitter and Instagram.
+- **Javascript** - Used Javascript to create functions, conditions and loops to manipulate items on the webpage. Especially added event listeners that can listen and trigger a function when features like input checkbox and buttons are clicked on.
+
+- Employed the help of [www.w3schools.com](https://www.w3schools.com/jsref/prop_element_classlist.asp) to be able to add and remove class attributes. With the help of [stackoverflow.com](https://stackoverflow.com/questions/9709209/html-select-only-one-checkbox-in-a-group) I was able to add the function to allow only one answer to be selcted at a time.
 
 ---
 
@@ -71,9 +88,8 @@ To enhance or contribute on the existing project, follow these steps:
 
 ---
 
-\- Click this link to see the live website [Quick Movers](https://moryno.github.io/quickMoversWebsite/)
+\- Click this link to see the live website [Quiz Board Website](https://moryno.github.io/Quiz-Board/)
 
-![property page](./assets/img/property%20page%20head.png)
 
 ## License
 
