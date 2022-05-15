@@ -9,6 +9,7 @@ inputs.forEach((input) => {
     let checked = this.checked;
     
     if(checked){
+        
     let selectedAnswer = this.value;
     if(selectedAnswer === "correct"){
        points.push(20);
@@ -28,6 +29,7 @@ const checkedBox = (checkbox) =>{
     let checkboxes = document.querySelectorAll(".selected");
     checkboxes.forEach((box) => {
         if(box !== checkbox) box.checked = false;
+        
         
     })
 }

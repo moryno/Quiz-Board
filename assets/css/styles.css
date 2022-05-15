@@ -5,17 +5,19 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb((245), 247, 251);
+    background-color: rgb(245, 247, 251);
     color: rgb(93,102,144);
     font-family: 'Montserrat', sans-serif;
 }
 
 /* .............................. NAVIGATION SECTION ........................... */
-#home {
+#home, #landing {
     height: 100vh;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
-
+nav {
+    padding: 1rem;
+}
 nav > .navMenu {
     display: flex;
     align-items: center;
@@ -30,6 +32,11 @@ nav > .navMenu > .logo {
     justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
+}
+
+.logoSubTitle {
+    vertical-align: sub;
+    color: #4c5a9e;
 }
 
 nav > .navMenu > .pageTitle {
