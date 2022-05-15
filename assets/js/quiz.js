@@ -33,8 +33,6 @@ const checkedBox = (checkbox) =>{
 }
 
 // CREATE A FUNCTION TO COMPUTE AND DISPLAY SCORE WHEN SUBMITTED
-
-
 const onNext = () => {
     let totalPoints = 0;
     for(let i = 0; i < points.length; i++){
@@ -42,6 +40,7 @@ const onNext = () => {
         if(totalPoints >= 80) {
             document.querySelector("h3").textContent = "Exellently passed!!!";
             document.querySelector("#heading p" ).textContent =`Your score is ${totalPoints}%`;
+            
         }
         else if( totalPoints >=50 && totalPoints < 80){
             document.querySelector("h3").textContent = "Fairly passed.";
@@ -101,3 +100,4 @@ prevButtons.forEach((button) => {
     
     })
 });
+
