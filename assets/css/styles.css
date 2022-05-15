@@ -8,15 +8,17 @@ body {
     background-color: rgb(245, 247, 251);
     color: rgb(93,102,144);
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 /* .............................. NAVIGATION SECTION ........................... */
 #home, #landing {
     height: 100vh;
-    padding: 1rem 2rem;
+    padding: 1rem ;
 }
 nav {
     padding: 1rem;
+    background-color: #95d6a2;
 }
 nav > .navMenu {
     display: flex;
@@ -78,7 +80,7 @@ nav > .navMenu > .navButton > button {
 }
 .landingHeader{
     padding: 8rem;
-    background-color: #95d6a2;
+    
 }
 
 #heading > h3 {
@@ -189,6 +191,14 @@ input[type="checkbox"] {
 .submit {
     right: 2rem;
 }
+.footer {
+    
+    text-align: center;
+    padding: 1.75rem;
+    background-color: #95d6a2;
+  }
+  
+
 
 /* MEDIA QUERY */
 
