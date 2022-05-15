@@ -40,15 +40,17 @@ const onNext = () => {
         if(totalPoints >= 80) {
             document.querySelector("h3").textContent = "Exellently passed!!!";
             document.querySelector("#heading p" ).textContent =`Your score is ${totalPoints}%`;
-            
+            document.querySelector("#heading").style.backgroundColor = "#95d6a2";
         }
         else if( totalPoints >=50 && totalPoints < 80){
             document.querySelector("h3").textContent = "Fairly passed.";
             document.querySelector("#heading p" ).textContent = `Your score is ${totalPoints}%`;
+            document.querySelector("#heading").style.backgroundColor = "#95d6a2";
         }
         else{
             document.querySelector("h3").textContent = "Scored poorly, you need to retake the test";
             document.querySelector("#heading p" ).textContent = `Your score is ${totalPoints}%`;
+            document.querySelector("#heading").style.backgroundColor = "#95d6a2";
         }
 
     }
