@@ -9,7 +9,7 @@ inputs.forEach((input) => {
     let checked = this.checked;
     
     if(checked){
-        
+    input.parentNode.style.backgroundColor = "#95d6a2";      
     let selectedAnswer = this.value;
     if(selectedAnswer === "correct"){
        points.push(20);
@@ -19,6 +19,7 @@ inputs.forEach((input) => {
     }
     }
     else{
+        input.parentNode.style.backgroundColor = "unset";  
        console.log( "No answer has been selected");
     }
     })
@@ -105,3 +106,11 @@ prevButtons.forEach((button) => {
     })
 });
 
+// CREATE FUNCTION TO REFRESH PAGE
+
+
+// const refresh = () =>{
+//     document.querySelector(".refresh").addEventListener("click", function(){
+//         window.location.reload();
+//     })
+// }
