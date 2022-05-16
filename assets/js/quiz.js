@@ -19,7 +19,7 @@ inputs.forEach((input) => {
     }
     }
     else{
-   console.log( "No answer has been selected");
+       console.log( "No answer has been selected");
     }
     })
 });
