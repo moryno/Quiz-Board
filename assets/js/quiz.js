@@ -3,6 +3,7 @@ let points = [];
 
 
 // CREATE A FUNCTION TO IDENTIFY THE SELECTED ANSWER AND STORE IT IN A LIST
+
 let inputs = document.querySelectorAll(".selected");
 inputs.forEach((input) => { 
    input.addEventListener("click", function(){
@@ -36,7 +37,7 @@ const checkedBox = (checkbox) =>{
 }
 
 // CREATE A FUNCTION TO COMPUTE AND DISPLAY SCORE WHEN SUBMITTED
-const onNext = () => {
+const onSubmit = () => {
     let totalPoints = 0;
     for(let i = 0; i < points.length; i++){
         totalPoints += points[i];
@@ -106,11 +107,3 @@ prevButtons.forEach((button) => {
     })
 });
 
-// CREATE FUNCTION TO REFRESH PAGE
-
-
-// const refresh = () =>{
-//     document.querySelector(".refresh").addEventListener("click", function(){
-//         window.location.reload();
-//     })
-// }
